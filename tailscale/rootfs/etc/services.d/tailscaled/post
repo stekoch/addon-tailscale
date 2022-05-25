@@ -55,7 +55,8 @@ do
       --advertise-exit-node \
       --accept-routes \
       --advertise-routes "${routes[*]}" \
-      --advertise-tags="${tags}"
+      --advertise-tags="${tags}" \
+      --snat-subnet-routes=false
 
     bashio::exit.ok
   fi
